@@ -1,4 +1,5 @@
 .idea
 .env
 artifact*
+ecosystem.config.js
 node_modules/
