@@ -7,7 +7,7 @@ const { spawn } = require('child_process');
 const app = express();
 app.use(express.json());
 
-app.get('/', auth, async (req, res) => {
+app.get('/pin', auth, async (req, res) => {
   const artifactId = req.query['artifactId'];
   if (!artifactId) {
     return res.status(400).send({ error: 'Artifact ID is required' });
